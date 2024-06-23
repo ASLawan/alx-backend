@@ -6,7 +6,7 @@
 """
 import csv
 import math
-from typing import List
+from typing import List, Dict
 
 
 def index_range(page: int, page_size: int) -> tuple:
@@ -52,7 +52,7 @@ class Server:
             return []
         return data_set[start_index:end_index]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict[str, any]:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, any]:
         """Returns a dictionary of hypermedia information"""
         data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
