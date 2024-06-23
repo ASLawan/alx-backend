@@ -9,6 +9,7 @@ into manageable chunks and displaying them across multiple pages.
 
 __Data is divided:__  
 - A large dataset is split into smaller subsets based on a chosen number of items per page (often called the page size).  
+
 __Pages are created:__  
 
 - Each subset becomes its own separate page, typically numbered sequentially.  
@@ -27,6 +28,7 @@ __Enhanced user experience:__
 
 - Large amounts of information on a single page can be overwhelming.   
 - Pagination makes it easier for users to browse and digest information in smaller, more manageable sections.  
+
 __Better accessibility:__   
 
 - Pagination aids users with screen readers or assistive technologies by allowing them to navigate through content in smaller parts.
