@@ -20,7 +20,7 @@ class BaseCaching():
         """Prints the cache"""
         print("Current cache:")
         for key in sorted(self.cache_data.keys()):
-            print(f"{}: {}.format(key, self.cache_data.get(key))")
+            print("{}: {}".format(key, self.cache_data.get(key)))
 
     def put(self, key, item):
         """Adds an item to the cache"""
