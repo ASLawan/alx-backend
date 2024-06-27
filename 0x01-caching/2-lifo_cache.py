@@ -29,6 +29,8 @@ class LIFOCache(BaseCaching):
             self.order.remove(key)
             self.order.append(key)
             self.cache_data[key] = item
+        else:
+            pass
 
     def get(self, key):
         """Gets an item from the cache dictionary by key"""
