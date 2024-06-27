@@ -25,12 +25,10 @@ class LIFOCache(BaseCaching):
                     print("DISCARD: {}".format(last_key))
                 self.order.append(key)
             self.cache_data[key] = item
-        elif key in self.cache_data:
+        elif key in self.cache_data and item:
             self.order.remove(key)
             self.order.append(key)
             self.cache_data[key] = item
-        else:
-            pass
 
     def get(self, key):
         """Gets an item from the cache dictionary by key"""
