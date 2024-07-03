@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
     Module implmenting a basic flask app with
-    i18n support
+    i18n support, url parameter
 
 """
 from flask import Flask, render_template, request
