@@ -5,7 +5,7 @@
 
 """
 from flask import Flask, render_template, request
-from flask_babel import Babel, _
+from flask_babel import Babel, gettext
 
 
 class Config:
@@ -30,8 +30,8 @@ def get_locale() -> str:
 @app.route('/')
 def index():
     """default app route"""
-    home_title = _("home_title")
-    home_header = _("home_header")
+    home_title = gettext("home_title")
+    home_header = gettext("home_header")
     return render_template('3-index.html',
                            home_title=home_title, home_header=home_header)
 
