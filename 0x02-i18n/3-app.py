@@ -36,5 +36,10 @@ def index():
                            home_title=home_title, home_header=home_header)
 
 
+def _():
+    """Handles translations"""
+    pass
+
+
 if __name__ == "__main__":
     app.run(debug=True)
